@@ -1,12 +1,12 @@
 Summary:	X.org video driver for Cyrix video chips
 Summary(pl):	Sterownik obrazu X.org dla uk³adów graficznych Cyrix
 Name:		xorg-driver-video-cyrix
-Version:	1.0.0.2
+Version:	1.0.0.3
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC2/driver/xf86-video-cyrix-%{version}.tar.bz2
-# Source0-md5:	c449d9c43cd3d8cf1ebb7c5a9d159d3d
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/driver/xf86-video-cyrix-%{version}.tar.bz2
+# Source0-md5:	4712c9e81985f6e7fb34ab667b85a5c9
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -17,7 +17,7 @@ BuildRequires:	xorg-proto-randrproto-devel
 BuildRequires:	xorg-proto-renderproto-devel
 BuildRequires:	xorg-proto-xextproto-devel
 BuildRequires:	xorg-proto-xf86dgaproto-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.1
+BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRequires:	xorg-xserver-server-devel >= 0.99.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -52,8 +52,7 @@ uk³ady towarzysz±ce CS5510, CS5520, CS5530 i CS5530A.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	drivermandir=%{_mandir}/man4
+	DESTDIR=$RPM_BUILD_ROOT
 
 rm -f $RPM_BUILD_ROOT%{_libdir}/xorg/modules/*/*.la
 
@@ -64,4 +63,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README
 %attr(755,root,root) %{_libdir}/xorg/modules/drivers/cyrix_drv.so
-%{_mandir}/man4/cyrix.4x*
+%{_mandir}/man4/cyrix.4*
