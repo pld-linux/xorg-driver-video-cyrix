@@ -1,12 +1,12 @@
 Summary:	X.org video driver for Cyrix video chips
 Summary(pl):	Sterownik obrazu X.org dla uk³adów graficznych Cyrix
 Name:		xorg-driver-video-cyrix
-Version:	1.0.0.3
+Version:	1.0.0.5
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/driver/xf86-video-cyrix-%{version}.tar.bz2
-# Source0-md5:	4712c9e81985f6e7fb34ab667b85a5c9
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/driver/xf86-video-cyrix-%{version}.tar.bz2
+# Source0-md5:	edfe947eef0d1d18b66372b3ae5cfad0
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -61,6 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README
+%doc COPYING ChangeLog README
 %attr(755,root,root) %{_libdir}/xorg/modules/drivers/cyrix_drv.so
 %{_mandir}/man4/cyrix.4*
