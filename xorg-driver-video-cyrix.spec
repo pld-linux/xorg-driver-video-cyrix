@@ -1,5 +1,5 @@
 Summary:	X.org video driver for Cyrix video chips
-Summary(pl.UTF-8):   Sterownik obrazu X.org dla układów graficznych Cyrix
+Summary(pl.UTF-8):	Sterownik obrazu X.org dla układów graficznych Cyrix
 Name:		xorg-driver-video-cyrix
 Version:	1.1.0
 Release:	0.1
