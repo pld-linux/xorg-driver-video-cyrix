@@ -1,5 +1,5 @@
 Summary:	X.org video driver for Cyrix video chips
-Summary(pl):	Sterownik obrazu X.org dla uk³adów graficznych Cyrix
+Summary(pl.UTF-8):   Sterownik obrazu X.org dla ukÅ‚adÃ³w graficznych Cyrix
 Name:		xorg-driver-video-cyrix
 Version:	1.1.0
 Release:	0.1
@@ -29,11 +29,11 @@ MediaGXm processors, as well as the Natsemi 'Geode' branded
 processors. It supports the CS5510, CS5520, CS5530 and CS5530A
 companion chips.
 
-%description -l pl
-Sterownik obrazu X.org dla uk³adów graficznych z serii Cyrix MediaGX
-(teraz Natsemi Geode). Ten sterownik obs³uguje uk³ady MediaGX,
-MediaGXi, MediaGXm, a tak¿e firmowane jako Natsemi "Geode". Obs³uguje
-uk³ady towarzysz±ce CS5510, CS5520, CS5530 i CS5530A.
+%description -l pl.UTF-8
+Sterownik obrazu X.org dla ukÅ‚adÃ³w graficznych z serii Cyrix MediaGX
+(teraz Natsemi Geode). Ten sterownik obsÅ‚uguje ukÅ‚ady MediaGX,
+MediaGXi, MediaGXm, a takÅ¼e firmowane jako Natsemi "Geode". ObsÅ‚uguje
+ukÅ‚ady towarzyszÄ…ce CS5510, CS5520, CS5530 i CS5530A.
 
 %prep
 %setup -q -n xf86-video-cyrix-%{version}
